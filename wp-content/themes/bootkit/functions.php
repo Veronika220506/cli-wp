@@ -1,25 +1,11 @@
 <?php
-function my_filter_function1($str)
-{
-    $str = '<em>' . $str . '</em>';
-    return $str; // возвращаем измененное значение!
-}
+// Setup
+define('BOOTSTRAPTOPIC_DEV_MODE', false);
 
-add_filter('my_filter1', 'my_filter_function1');
+// Includes
+include get_theme_file_path('includes/enqueue.php');
 
-function my_filter_function2($str)
-{
-    return 'Hello ' . $str . '!'; // возвращаем измененное значение!
-}
-add_filter('my_filter2', 'my_filter_function2');
+// Hooks
+add_action('wp_enqueue_scripts', 'bootkit_enqueue');
 
-function my_action_function($text)
-{
-    echo 'Произошло событие "my_action"!'; // ничего не возвращаем!
-}
-add_action('my_action', 'my_action_function', 2);
-function my_action_function_new()
-{
-    echo "!!!";
-}
-add_action('my_action', 'my_action_function_new', 1);
+// Shortcodes
