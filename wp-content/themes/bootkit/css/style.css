@@ -1,0 +1,48 @@
+body{
+    background-color: #316B83;
+}
+.my-4{
+    font-size:60px;
+    font-weight:900;
+    color: #D5BFBF;
+    background-color:#316B83 ;
+}
+.card{
+    background-color: #8CA1A5;
+    border: 4px dashed ;
+}
+.card-header{
+    font-size:30px;
+    font-weight:900;
+    color: #D5BFBF;
+}
+.card-text{
+    color: #D5BFBF;
+    font-weight:bolder;
+}
+.btn{
+    background-color: #6D8299;
+    border-color:#D5BFBF ;
+}
+h2{
+    text-align: center;
+    font-size:45px;
+    font-weight:900;
+    color: #D5BFBF;
+}
+a{
+    color:#D5BFBF;
+}
+a:-webkit-any-link {
+    color: #D5BFBF;
+    cursor: pointer;
+    text-decoration: underline;
+}
+p{
+    color: #D5BFBF;
+    font-weight:bolder; 
+}
+ul{
+    font-weight:900;
+    color: #D5BFBF;
+}
