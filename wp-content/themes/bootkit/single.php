@@ -4,7 +4,6 @@ get_header();
 <!-- Page Content -->
 <div class="container">
 
-   
 
     <!-- Marketing Icons Section -->
     <div class="row">
@@ -22,20 +21,14 @@ get_header();
 ?>
 
 
-           
+
 
         </div>
 
         <?php get_sidebar();?>
     </div>
     <!-- /.row -->
-
-
-
-
-
     <hr>
-
 
 
 </div>
