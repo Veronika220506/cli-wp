@@ -1,10 +1,7 @@
-
-
-<?php 
-
+<?php
 /*
-* Template Name: Full Width Page
-*/
+ * Template Name: Full Width Page
+ */
 
 get_header("v2");?>
 
@@ -63,15 +60,6 @@ if (has_post_thumbnail()) {
             <?php the_tags('', ', ');?>
             <hr>
 
-            <!-- Pagination -->
-            <ul class="pagination justify-content-center mb-4">
-                <li class="page-item">
-                    <?php previous_post_link();?>
-                </li>
-                <li class="page-item">
-                    <?php next_post_link();?>
-                </li>
-            </ul>
 
             <!-- Post Author Info -->
             <div class="card">
@@ -89,7 +77,7 @@ if (has_post_thumbnail()) {
                 </div>
             </div><!-- Post Single - Author End -->
 
-            
+
             <?php
 if (comments_open() || get_comments_number()) {
             comments_template();
@@ -99,7 +87,8 @@ if (comments_open() || get_comments_number()) {
 }
 }?>
         </div>
-      
+
+        <!-- /.row -->
 
     </div>
     <!-- /.container -->
