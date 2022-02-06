@@ -20,4 +20,6 @@ function bootkit_enqueue()
     wp_enqueue_script('bootkit_bootstrap');
     wp_register_style('mystyles', $url . '/css/style.css');
  wp_enqueue_style('mystyles');
+ wp_register_style('bootkit_font-awesome_fonts', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', [], $ver);
+ wp_enqueue_style('bootkit_font-awesome_fonts');
 }

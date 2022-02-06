@@ -42,6 +42,38 @@ if (has_nav_menu('primary')) {
 ?>
             </div>
         </div>
+          <!-- Top Social ============================================= -->
+          <div id="top-social">
+            <ul>
+                <?php
+if (get_theme_mod('bootkit_facebook_handle')) {
+    ?>
+                <li><a href="<?php echo get_theme_mod('bootkit_facebook_handle'); ?>" target="_blank">
+                    <i class="fa fa-facebook"></i></a>
+                </li>
+                <?php
+}if (get_theme_mod('bootkit_instagram_handle')) {
+    ?>
+                <li><a href="<?php echo get_theme_mod('bootkit_instagram_handle'); ?>" target="_blank">
+                    <i class="fa fa-instagram"></i></a>
+                </li>
+<?php
+}
+if (get_theme_mod('bootkit_email')) {
+    ?><li><a href="mailto:<?php echo get_theme_mod('bootkit_email'); ?>">
+         <i  class="fa fa-envelope"></i><?php echo get_theme_mod('bootkit_email'); ?></a></li>
+<?php
+}
+if (get_theme_mod('bootkit_phone_number')) {
+    ?><li><a href="tel:+<?php echo get_theme_mod('bootkit_phone_number'); ?>">
+<i class="fa fa-phone"></i>+<?php echo get_theme_mod('bootkit_phone_number'); ?></a></li>
+<?php
+}
+?>
+
+
+            </ul>
+        </div><!-- #top-social end -->
     </nav>
     <?php if (is_front_page()) {?>
     <header>
