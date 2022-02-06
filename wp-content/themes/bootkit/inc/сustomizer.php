@@ -2,7 +2,7 @@
 if (!class_exists('Kirki')) {
     return;
 }
-Kirki::add_config('sydney2021', array(
+Kirki::add_config('theme_config_id', array(
     'capability' => 'edit_theme_options',
     'option_type' => 'theme_mod',
 ));
