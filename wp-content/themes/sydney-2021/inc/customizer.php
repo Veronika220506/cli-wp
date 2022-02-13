@@ -59,3 +59,12 @@ function sydney_2021_customize_preview_js() {
 	wp_enqueue_script( 'sydney-2021-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
 add_action( 'customize_preview_init', 'sydney_2021_customize_preview_js' );
+if (!class_exists('Kirki')) {
+    return;
+}
+ 
+/**
+ * General Settings
+ */
+require get_template_directory() . '/inc/customizer/sections/general.php';
+
