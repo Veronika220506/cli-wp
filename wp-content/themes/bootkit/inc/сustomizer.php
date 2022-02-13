@@ -2,14 +2,25 @@
 if (!class_exists('Kirki')) {
     return;
 }
-Kirki::add_config('theme_config_id', array(
+Kirki::add_config('sydney2021', array(
     'capability' => 'edit_theme_options',
     'option_type' => 'theme_mod',
 ));
- /**
-  * General Settings
-  */
-  require get_template_directory() . '/inc/customizer/sections/general.php';
+
+/**
+ * General Settings
+ */
+require get_template_directory() . '/inc/customizer/sections/general.php';
+
+//KIRKI CONFIGURATION
+
+//General configuration for Kirki
+Kirki::add_config('theme_config_id', [
+    'capability' => 'edit_theme_options',
+    'option_type' => 'theme_mod',
+]);
+
+add_filter('kirki_telemetry', '__return_false');
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.

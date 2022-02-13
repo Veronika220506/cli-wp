@@ -11,7 +11,7 @@
     <title>Modern Business - Start Bootstrap Template</title>
 
     <?php wp_head();?>
-    
+
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand" href="<?php echo get_site_url() ?>">Start Bootstrap</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -74,14 +74,16 @@ if (get_theme_mod('bootkit_phone_number')) {
 
             </ul>
         </div><!-- #top-social end -->
-        <?php $text_value = get_theme_mod('al-logo', 'DEFAULT VALUE');?>
-    <div class="kirki"
-        style="font-weight:bold; border: 10px #D5BFBF solid; padding: 10px; border-radius:0%; display:inline-block;">
-        <?php echo $text_value; ?>
-     </div>
+        <?php $text_value = get_theme_mod('al-logo', 'logo');?>
+        <div class="kirki"
+            style="font-weight:bold; border: 3px gray solid; padding: 5px; border-radius:5px; display:inline-block; ">
+            <?php echo $text_value; ?>
+        </div>
+
     </nav>
+
+
     <?php if (is_front_page()) {?>
-        
     <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -125,8 +127,8 @@ if (get_theme_mod('bootkit_phone_number')) {
             </a>
         </div>
     </header>
-    <?php } 
-    ?>
+    <?php }?>
+
     <div class="container">
         <?php if (get_theme_mod('bootkit_header_show_search')) {?>
         <!-- Top Search  ============================ -->
