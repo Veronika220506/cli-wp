@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bootkit\n"
+"POT-Creation-Date: 2022-02-20 15:25+0200\n"
+"PO-Revision-Date: 2022-02-20 15:27+0200\n"
+"Last-Translator: \n"
+"Language-Team: NIKA\n"
+"Language: ru_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:8
+msgid "Page Not Found"
+msgstr "Страница не найдена"
+
+#: 404.php:20
+msgid "The page you're looking for could not be found"
+msgstr "Не удалось найти страницу, которую вы ищете"
+
+#: comments.php:16
+msgid "Name"
+msgstr "Имя"
+
+#: comments.php:21 includes/customizer/social.php:43
+msgid "Email"
+msgstr "Эл. адрес"
+
+#: comments.php:26
+msgid "Website"
+msgstr "Сайт"
+
+#: comments.php:31
+msgid "Submit Comment"
+msgstr "Отправить комментарий"
+
+#: full-width.php:51 mini_news.php:14 page.php:46 sidebarleft.php:50
+#: single.php:52
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: inc/customizer/sections/general.php:18
+#: inc/customizer/sections/general.php:88
+msgid "Border"
+msgstr "Граница"
+
+#: inc/customizer/sections/general.php:105
+msgid "Text in box"
+msgstr ""
+
+#: includes/customizer/misc.php:5
+msgid "Bootkit Additional Settings"
+msgstr ""
+
+#: includes/customizer/misc.php:15
+msgid "Show Search Button in Header"
+msgstr ""
+
+#: includes/customizer/social.php:5 includes/theme-customizer.php:6
+msgid "Bootkit Social Settings"
+msgstr ""
+
+#: includes/customizer/social.php:15 includes/theme-customizer.php:13
+msgid "Facebook"
+msgstr ""
+
+#: includes/customizer/social.php:27
+msgid "Instagram"
+msgstr ""
+
+#: includes/customizer/social.php:53
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+#: includes/setup.php:5
+msgid "Primary Menu"
+msgstr "Главное меню"
+
+#: includes/widgets.php:5
+msgid "Bootkit first Sidebar"
+msgstr ""
+
+#: includes/widgets.php:7
+msgid "Bootkit first Sidebar for something."
+msgstr ""
+
+#: partials/posts/content-none.php:1
+msgid "Nothing found"
+msgstr "Ничего не найдено"
+
+#: partials/posts/content-none.php:2
+msgid "Nothing found, please use the search."
+msgstr ""
+
+#: search.php:5
+msgid "Search Results for:"
+msgstr ""
+
+#: search.php:18
+msgid "What are you searhing for today?"
+msgstr ""
+
+#: searchform.php:8 searchform.php:10
+msgid "Search"
+msgstr "Поиск"
