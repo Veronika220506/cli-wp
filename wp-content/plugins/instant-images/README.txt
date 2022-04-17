@@ -1,18 +1,18 @@
-=== Instant Images - One Click Unsplash and Pixabay Uploads ===
+=== Instant Images - One Click Unsplash, Pixabay and Pexels Uploads ===
 Contributors: dcooney, connekthq
 Donate link: https://connekthq.com/donate/
-Tags: unsplash, pixabay, stock photo, prototyping, photos, media library, image upload, upload, free photos
+Tags: unsplash, pixabay, pexels, stock photo, prototyping, photos, media library, image upload, upload, free photos
 Requires at least: 4.0
-Tested up to: 5.8
+Tested up to: 5.9
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-One click uploads of Unsplash and Pixabay photos directly to your WordPress media library.
+One click uploads of photos from Unsplash, Pixabay and Pexels directly to your WordPress media library.
 
 == Description ==
 
-Instantly upload photos from Unsplash or Pixabay to your website without leaving WordPress!
+Instantly upload photos from Unsplash, Pixabay or Pexels to your website without leaving WordPress!
 
 **Instant Images** is the fastest and easiest way to upload high quality FREE photos from [unsplash.com](http://unsplash.com) and [Pixabay](http://pixabay.com) directly to your media library.
 
@@ -88,7 +88,10 @@ Some hosts lock down their servers and you may be required to update your php.in
 No, there is no need to sign up from an Unsplash account to access the photos server via Instant Images.
 
 = Do I need an account at Pixabay? =
-Yes, Pixabay access requires an API key. You can get this by signing up for a free account at [Pixabay](https://pixabay.com/).
+No, we provide an API for you to use, however you can get your own by signing up for a free account at [Pixabay](https://pixabay.com/).
+
+= Do I need an account at Pexels? =
+No, we provide an API for you to use, however you can get your own by signing up for a free account at [Pexels](https://pexels.com/).
 
 
 == Installation ==
@@ -127,6 +130,28 @@ How to install Instant Images.
 6. Instant Images is available in the WordPress media modal as a custom tab. It is available in front end page builder like Elementor, Beaver Builder and Divi.
 
 == Changelog ==
+
+= 4.6.1 - January 14, 2022 =
+NEW: Added default API keys for all API providers 🎉 . Default API keys can still be overwritten in the plugin settings shouls you want to use your own key.
+NEW: Added rate-limit checker to determine the status of the API and display an alert warning if the limit has been exceeded.
+
+= 4.6.0.1 - January 3, 2022 =
+HOTFIX: Hotfix for accidentaly `delete_options` function left in whilst testing. Sorry about that!
+
+= 4.6.0 - January 2, 2022 =
+NEW: Added Pexels integration. This requires a valid API key.
+FIX: Fixed issue with filtering Unsplash search results by 'all'.
+FIX: Various admin UI/UX updates and tweaks to improve the look and feel.
+
+= 4.5.1 - December 27, 2021 =
+NEW: Added Pixabay photo filters (Type, Category, Colors and Orientation).
+NEW: Added Unsplash search filters for Color, Orientation and Order.
+NEW: Added new `instant_images_pixabay_safesearch` & `instant_images_unsplash_content_filter` filters that allow for modifying the flags the indicate the types of suitable images that should be returned. Get more information in our [FAQ](https://connekthq.com/plugins/instant-images/faqs/#can-i-ensure-only-photos-safe-for-work-are-returned-in-the-photo-listings).
+NEW: Added Pixabay API constant that allows for setting Pixabay API key via site constant. e.g. `define( 'INSTANT_IMAGES_PIXABAY_KEY', 'YOUR-KEY-HERE' );`
+UPDATE: Revamped filtering menus and orientation options.
+UPDATE: Other UI/UX updates to make the plugin more visually appealing.
+UPDATE: Improved plugin accessibility across various sections.
+
 
 = 4.5.0 - October 28, 2021 =
 NEW: 🎉 Pixabay! We've added support for [Pixabay](https://pixabay.com) images. This requires a valid API key.
