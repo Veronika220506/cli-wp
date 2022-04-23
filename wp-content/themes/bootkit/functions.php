@@ -52,6 +52,7 @@ add_shortcode('time_to_post', 'time_shortcode');
 //     echo $summa;
 //     die;
 // }
+//--------Widget Area---------
 if (function_exists('register_sidebars')) {
     register_sidebar(array(
         'name' => 'Sidebar Area',
@@ -61,6 +62,7 @@ if (function_exists('register_sidebars')) {
         'after_title' => '</h2></div><div class="contentbox">',
     ));
 }
+
 //------------Widget-------------
 /* Виджет Bootkit Widget */
 class bootkit_widget extends WP_Widget
@@ -80,11 +82,12 @@ class bootkit_widget extends WP_Widget
     public function widget($args, $instance)
     {
         $title = apply_filters('widget_title', $instance['title']);
-        echo $args['before_widget'];
-        if (!empty($title)) {
-            echo $args['before_title'] . $title . $args['after_title'];
-        }
-        echo __('Hello, bootkit', 'bootkit_widget_domain');
+        $blog_title = get_bloginfo('name');
+        $tagline = get_bloginfo('description');
+        echo $args['before_widget'] . $args['before_title'] . $title . $args['after_title'];?>
+<p><strong>Site Name:</strong> <?php echo $blog_title ?></p>
+<p><strong>Tagline:</strong> <?php echo $tagline ?></p>
+<?php echo $args['after_widget'];
     }
 
     public function form($instance)
