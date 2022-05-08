@@ -1,8 +1,8 @@
 <?php
 /*
- * Plugin Name: Kit Carousel
+ * Plugin Name: Post of the day
  * Plugin URI:
- * Description: Simple carousel
+ * Description: Random post of the day
  * Version: 1.0
  * Author: MAI
  * Author URI: https://github.com/miwanoff/
@@ -17,16 +17,13 @@ if (!function_exists('add_action')) {
 }
 
 // Setup
-define('KC_PLUGIN_URL', __FILE__);
+define('RP_PLUGIN_URL', __FILE__);
 
 // Includes
-include 'includes/front/enqueue.php';
-include 'process/kc_show_carousel.php';
-include 'includes/admin/admin.php';
+include dirname(RP_PLUGIN_URL) . '/includes/widgets.php';
+include dirname(RP_PLUGIN_URL) . '/includes/widgets/daily-post.php';
 
 // Hooks
-add_action('wp_enqueue_scripts', 'kc_enqueue_scripts', 100);
-add_filter('the_content', 'kc_show_carousel');
-add_action('admin_menu', 'kc_create_menu');
+add_action('widgets_init', 'r_widgets_init');
 
 // Shortcodes
